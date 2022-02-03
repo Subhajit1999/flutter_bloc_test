@@ -123,7 +123,7 @@ class _LoginBodyState extends State<LoginBody> {
                         child: TextFormField(
                           onSaved: (value) => _email = value,
                           validator: _emailValidate,
-                          autovalidate: true,
+                          autovalidateMode: AutovalidateMode.always,
                           keyboardType: TextInputType.emailAddress,
                           style: TextStyle(
                             fontSize: 17.0,
@@ -158,7 +158,7 @@ class _LoginBodyState extends State<LoginBody> {
                         child: TextFormField(
                           validator: _passwordValidate,
                           onSaved: (value) => _password = value,
-                          autovalidate: true,
+                          autovalidateMode: AutovalidateMode.always,
                           obscureText: true,
                           style: TextStyle(
                             fontSize: 17.0,
